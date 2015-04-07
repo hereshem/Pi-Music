@@ -1,4 +1,4 @@
-package com.androidhive.musicplayer;
+package com.pimusic;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,9 +13,8 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
-import com.androidhive.musicplayer.SongsManager.OnListSongs;
 
-public class PlayListActivity extends ListActivity implements OnListSongs {
+public class PlayListActivity extends ListActivity implements SongsManager.OnListSongs {
 	// Songs list
 	public ArrayList<HashMap<String, String>> songsList = new ArrayList<HashMap<String, String>>();
 
